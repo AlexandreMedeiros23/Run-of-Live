@@ -1,0 +1,95 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+
+font-family: Arial, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+
+    display: flex;
+    justify-content: center; /* horizontal */
+    align-items: center;     /* vertical */
+
+    background-color: #2602f3; /* só exemplo */
+}
+
+#container {
+    
+    width: 350px;
+    background-color: white;
+
+    padding: 30px;   /*tamanho largura */
+    border-radius: 15px;  /* cantos arredondados */
+    
+    transition: all 0.5s ease;
+    
+    margin-bottom: 10px;
+
+    text-align: center;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+
+}
+
+/* INPUTS */
+#container input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+
+    border-radius: 8px;
+    border: 1px solid #ccc;
+
+    font-size: 14px;
+    outline: none;
+
+    transition: 0.3s;
+
+    box-shadow: 2px 2px 5px black;
+}
+
+
+#entrar {
+    width: 90%;
+    padding: 12px;
+
+    background-color: #2602f3;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+    box-shadow: 2px 2px 5px black;
+}
+
+#container input::placeholder {
+    color: black;
+    font-size: 14px;
+    font-style: italic;
+    text-shadow: 100%;
+}
+
+#h1 {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    padding: 0 10px;
+    color:white;
+    font-style:oblique;
+    
+}
+
+#icon-login {
+    position: absolute;
+    top: 115px;        /* sobe/desce o ícone */
+    right: 500px;     /* move para direita/esquerda */
+    width: 60px;      /* tamanho do ícone */
+    height: auto;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Obrigado pela confirmação</title>
+
+    <!-- LIGAÇÃO COM O CSS -->
+    <link rel="stylesheet" href="obrigado.css">
+</head>
+
+<body>
+
+    <div id="container-obrigado">
+        <h1 id="titulo">Presença confirmada! 🎉</h1>
+
+        <p id="mensagem">
+            Obrigado por confirmar sua participação na corrida!
+        </p>
+
+        <p id="numero">
+            Seu número de corredor é: <strong id="numero-corredor"></strong>
+        </p>
+
+        <div id="kit">
+            <h2 id="retirada"> Retirada do Kit </h2>
+            <p id="local">📍Local: Praça Central</p>
+            <p id="data">📅Data: 10/05</p>
+            <p id="horario">⏰Horário: 08:00 às 18:00</p>
+        </div>
+
+        <a href="index.html" id="voltar">Voltar para o início</a>
+    </div>
+    
+    <script>
+    // pegar dados salvos
+    let nome = localStorage.getItem("nome");
+    let numero = localStorage.getItem("numeroCorredor");
+
+    // colocar na tela
+    document.getElementById("titulo").innerText =
+        `Parabéns, ${nome}! 🎉`;
+
+    document.getElementById("numero-corredor").innerText = numero;
+        
+        </script>
+
+</body>
+</html>

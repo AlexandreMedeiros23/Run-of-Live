@@ -1,0 +1,28 @@
+sobrigado.css
+
+linha 26:
+
+text-shadow: horizontal vertical blur cor;
+No caso:
+0 → não vai pra esquerda/direita
+
+2px → desce um pouquinho
+
+6px → sombra suave
+
+rgba(0,0,0,0.7) → sombra escura
+
+style.css
+
+linha 28:
+
+PRIMEIRA SOMBRA (mais próxima do texto)
+0 1px 2px rgba(0, 0, 0, 0.6)
+
+SEGUNDA SOMBRA (mais distante e suave)
+0 3px 6px rgba(0, 0, 0, 0.4)
+
+0	centralizada
+3px	desce mais
+6px	mais espalhada
+rgba(0,0,0,0.4)	preto mais transparente
