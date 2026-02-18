@@ -15,13 +15,13 @@ body {
 
 
 #container {
-    width: 350px;
+    width: 90%;
+    max-width: 400px;
     background-color: rgba(82, 76, 76, 0.61);
-    margin: 95px auto;
-    padding: 25px;   /*tamanho largura */
+    margin: 0 auto;
+    padding: 25px;
     text-align: center;
-    border-radius: 15px;  /* cantos arredondados */
-
+    border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
 }
 
@@ -33,7 +33,7 @@ body {
 }
 
 input {
-    width: 80%;
+    width: 70%;
     padding: 10px;  /*tamanho largura */
     margin-bottom: 12px;
 
@@ -79,6 +79,25 @@ button {
     font-style:oblique;
     border-radius: 8px;
     box-shadow: 0 0 5px rgba(230, 0, 0, 0.5);  /*sombra ao redor do elemento*/
-
 }
 
+@media (max-width: 600px) {
+    #container {
+        padding: 20px;
+    }
+
+    input {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+
+    #paineladm {
+        left: 50%;
+        top: 20px;
+        width: 90%;
+        transform: translateX(-50%);
+    }
+}
